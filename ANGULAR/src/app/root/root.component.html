@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let module of websocket.modules">
+    <a routerLink="/details/{{module.nodeId}}">{{module.nodeId}}</a>
+    <div>
+      State: {{module.relay ? 'on' : 'off'}}
+      <button (click)="module.SetRelay(true)">ON</button>
+      <button (click)="module.SetRelay(false)">OFF</button>
+    </div>
+  </li>
+</ul>

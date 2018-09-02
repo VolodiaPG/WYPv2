@@ -1,0 +1,18 @@
+<app-loading-module [visible]="initialized">
+  <div *ngIf="mod">
+    <ul>
+      <li>
+        Id: {{mod.nodeId}}
+      </li>
+      <li>
+        Time: {{mod.time}}
+      </li>
+      <li>
+        Up time: {{mod.GetUptimeFormatted()}}
+      </li>
+      <li>
+        Timzeone: <input #timezoneinput value="{{mod.timezone}}" (keyup.enter)="mod.SetTimezone(timezoneinput.value)"/> (press enter when done)
+      </li>
+    </ul>
+  </div>
+</app-loading-module>
