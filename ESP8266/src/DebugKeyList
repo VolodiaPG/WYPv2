@@ -1,0 +1,22 @@
+//default definition
+#ifndef ITEM
+#define ITEM(X, Y)
+#endif 
+
+//item list
+ITEM(DEBUG      , 1 << 0)
+ITEM(OTA        , 1 << 1)
+ITEM(SERVER     , 1 << 2)
+ITEM(VAR        , 1 << 3)
+ITEM(SETUP      , 1 << 4)
+ITEM(WIFI       , 1 << 5)
+ITEM(WEBSOCKET  , 1 << 6)
+ITEM(WSMESSAGE  , 1 << 7)
+ITEM(FILESYSTEM , 1 << 8)
+ITEM(CLIENTMGR  , 1 << 9)
+ITEM(COMMANDMGR , 1 << 10)
+ITEM(PREFERENCES, 1 << 11)
+ITEM(MESH       , 1 << 12)
+ITEM(TIME       , 1 << 13)
+//clean-up
+#undef ITEM

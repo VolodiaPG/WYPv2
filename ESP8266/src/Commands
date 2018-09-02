@@ -1,0 +1,30 @@
+//default definition
+#ifndef COMMAND
+#define COMMAND(X, Y)
+#endif
+
+//item list
+COMMAND(wsclts, 0)
+
+COMMAND(restart, 1)
+
+COMMAND(heap, 2)
+
+COMMAND(relay, 3)
+
+COMMAND(meshclts, 4)
+
+COMMAND(time, 5)
+
+COMMAND(uptime, 6)
+
+COMMAND(timezone, 7)
+
+//returns the epoch time without accouting the timezone
+COMMAND(epochtime, 8)
+
+//indicates the master node id (local only)
+COMMAND(masternode, 9)
+
+//clean-up
+#undef COMMAND

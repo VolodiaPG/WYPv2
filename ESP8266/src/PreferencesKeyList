@@ -1,0 +1,39 @@
+//default definition
+#ifndef ITEM
+#define ITEM(X, Y)
+#endif
+
+//Items list
+
+//password hash is hashed with salt
+ITEM(ws_password, 0)
+
+//the salt
+ITEM(ws_password_salt, 1)
+
+//the mesh ssid
+ITEM(mesh_ssid, 2)
+
+//the mesh password
+ITEM(mesh_password, 3)
+
+//the mesh pass salt
+ITEM(mesh_password_salt, 4)
+
+//the wifi ssid
+ITEM(wifi_ssid, 5)
+
+//the wifi password
+ITEM(wifi_password, 6)
+
+//channel for the 2 things
+ITEM(channel, 7)
+
+//the mode
+ITEM(mode, 8)
+
+//timezone
+ITEM(timezone_pref, 9)
+
+//clean up
+#undef ITEM

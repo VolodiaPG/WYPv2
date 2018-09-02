@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <link rel="icon" href="favicon.ico" />
+  <title>WebSocket Setup</title>
+</head>
+
+<body>
+  <form action="/setup" method="POST"> 
+    <div>
+      <input type="radio" name="mode" value="bridge">Bridge <br>
+      <input type="radio" name="mode" value="node">Node
+    </div>
+    <div>
+      Websocket Password:<br>
+      <input type="password" name="ws_pass">
+    </div>
+    <div>
+      Wifi Channel:
+      <input type="number" name="channel">
+    </div>
+    <div>
+      Station (Bridge)<br>
+      <div>
+        SSID:<br>
+        <input type="text" name="wifi_ssid">
+      </div>
+      <div>
+        Password:<br>
+        <input type="password" name="wifi_pass">
+      </div>
+    </div>
+    <div>
+      Mesh (Node && Bridge) <br>
+      <div>
+        SSID:<br>
+        <input type="text" name="mesh_ssid">
+      </div>
+      <div>
+        Password:<br>
+        <input type="password" name="mesh_pass">
+      </div>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
