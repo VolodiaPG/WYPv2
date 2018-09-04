@@ -35,9 +35,7 @@ bool doOnce = false;
 
 void setup()
 {
-    delay(5000);
-
-#ifdef WYP_DEBUG
+    #ifdef WYP_DEBUG
     Debug.SetDebugFlags(debug_flags_t::DEBUG | debug_flags_t::OTA | WIFI | SERVER | VAR |
                         SETUP | WEBSOCKET | WSMESSAGE | FILESYSTEM | CLIENTMGR |
                         COMMANDMGR | MESH | TIME);
@@ -57,6 +55,7 @@ void setup()
     //spiffs
     SPIFFS.begin();
     debugln(SETUP, "Began SPIFFS");
+
     Preferences.Begin();
     debugln(SETUP, "Began Preferences");
 
